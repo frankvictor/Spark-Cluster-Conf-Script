@@ -32,6 +32,8 @@ if [ -f ~/.ssh/id_rsa.pub ]; then
 	esac
 else
 	echo "file ~/.ssh/id_rsa.pub does not exist!"
-	echo "please first generate ssh key"
+	echo "generate ssh key"
+	cd ~/.ssh/ && ssh-keygen
+	echo "please try again"
 	exit 1
 fi
