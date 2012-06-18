@@ -1,0 +1,11 @@
+#!/bin/bash
+#ssh hadoop@hp04 "/home/hadoop/SPARK/mesos/deploy/stop-mesos && /home/hadoop/SPARK/mesos/deploy/start-mesos"
+
+hadoop fs -rm wcoutput
+./sbt/sbt package
+./sbt/sbt "run hp04:5050 \
+               hdfs://hp04:9000/user/hadoop/wcinput \
+							 hdfs://hp04:9000/user/hadoop/wcoutput/ \
+							 /home/hadoop/Spark/spark \
+							 ./target/scala-2.9.1/wordcount_2.9.1-1.0.jar"
+							 #./lib/spark-core-assembly-0.4.jar"

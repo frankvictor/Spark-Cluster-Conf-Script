@@ -1,0 +1,5 @@
+#!/bin/bash
+MESOS_HOME=/home/hadoop/Spark/mesos
+EXTRA_ARGS="-Djava.library.path=$MESOS_HOME/lib"
+export BENCHMARK_HOME=$(cd "$(dirname $0)/.."; pwd)
+$JAVA_HOME/bin/java -Xmx800M -XX:MaxPermSize=150m $EXTRA_ARGS -jar $BENCHMARK_HOME/sbt/sbt-launch-*.jar "$@"
