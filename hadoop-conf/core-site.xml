@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+
+<property>
+  <name>fs.default.name</name>
+  <value>hdfs://hp04:9000</value>
+  <final>true</final>
+</property>
+
+<property>
+  <name>io.file.buffer.size</name>
+  <value>131072</value>
+  <final>true</final>
+</property>
+
+</configuration>
