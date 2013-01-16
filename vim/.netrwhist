@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/local/hadoop/Spark/pageranklog/2012-07-05'
+let g:netrw_dirhist_2='/local/hadoop/Spark/spark/conf'
+let g:netrw_dirhist_3='/local/hadoop/Spark/benchmark/benchmark-core/2012-07-10'
+let g:netrw_dirhist_4='/home/fenglin/.ssh'
+let g:netrw_dirhist_5='/home/fenglin/android/server'
