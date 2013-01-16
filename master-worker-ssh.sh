@@ -4,7 +4,7 @@
 if [ -f ~/.ssh/id_rsa.pub ]; then
 	if [ "$#" == "0" ]; then
 		echo "usage $0 [m/s]"
-		echo "m: add multiple node"
+		echo "m: add multiple nodes"
 		echo "s: add single node"
 		exit 1
 	fi
